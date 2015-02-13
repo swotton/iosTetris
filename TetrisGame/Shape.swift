@@ -49,16 +49,20 @@ let ThirdBlockIdx: Int = 2
 let FourthBlockIdx: Int = 3
 
 class Shape: Hashable, Printable {
+    
     let color:BlockColor
+    
     var blocks = Array<Block>()
+    
     var orientation: Orientation
+    
     var column, row:Int
     
     var blockRowColumnPositions: [Orientation: Array<(columnDiff: Int, rowDiff: Int)>] {
         return [:]
     }
 
-    var bottomBlocksForOrientations: [Orientation: Array<Block>} {
+    var bottomBlocksForOrientations: [Orientation: Array<Block>]{
         return [:]
     }
     
@@ -67,28 +71,41 @@ class Shape: Hashable, Printable {
         return bottomBlocks
     }
     return []
+    }
     
-        var hashValue:Int {
-            return reduce(blocks, 0) { $0.hashvalue ^ $1.hashValue }
+    var hashValue:Int {
+            return reduce(blocks, 0) { $0.hashValue ^ $1.hashValue }
         }
         
-        var description:String {
+    var description:String {
             return "\(color) block facing \(orientation): \(blocks[FirstBlockIdx]), \(blocks[SecondBlockIdx]), \(blocks[ThirdBlockIdx]), \(blocks[FourthBlockIdx])"
         }
         
-        init(column:Int, row:Int, color: BlockColor, orientation:Orientation) {
+    init(column:Int, row:Int, color: BlockColor, orientation:Orientation) {
             self.color = color
             self.column = column
             self.row = row
             self.orientation = orientation
             initializeBlocks()
         }
-        convenience init(column:Int, row:Int)
-    
-}
+        
+    convenience init(column:Int, row:Int){
+        self.init(column:column, row:row, color:BlockColor.random(), orientation:Orientation.random())
+        }
 
-    
-return []
-
+final func initializeBlocks() {
+    if let blockRowColumnTranslations = blockRowColumnPositions[orientation] {
+        for i in 0..<blockRowColumnTranslations.count {
+            let blockRow = row + blockRowColumnTranslations[i].rowDiff
+            let blockColumn = column + blockRowColumnTranslations[i].columnDiff
+            let newBlock = Block(column: blockColumn, row: blockRow, color:color)
+            blocks.append(newBlock)
+        }
     }
 }
+}
+
+func ==(lhs: Shape, rhs: Shape) -> Bool {
+    return lhs.row == rhs.row && lhs.column == rhs.column
+}
+
