@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B7D6B0B1AA9C3D000937608 /* TShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7D6B0A1AA9C3D000937608 /* TShape.swift */; };
+		7B7D6B0D1AA9C41400937608 /* LineShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7D6B0C1AA9C41400937608 /* LineShape.swift */; };
+		7B7D6B0F1AA9C44C00937608 /* LShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7D6B0E1AA9C44C00937608 /* LShape.swift */; };
+		7B7D6B111AA9C47F00937608 /* JShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7D6B101AA9C47F00937608 /* JShape.swift */; };
+		7B7D6B131AA9C4C000937608 /* SShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7D6B121AA9C4C000937608 /* SShape.swift */; };
+		7B7D6B151AA9C4E100937608 /* ZShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7D6B141AA9C4E100937608 /* ZShape.swift */; };
+		7B7D6B171AA9C58700937608 /* Swiftris.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7D6B161AA9C58700937608 /* Swiftris.swift */; };
+		7BFDAF091A8E2BB100E39525 /* SquareShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFDAF081A8E2BB100E39525 /* SquareShape.swift */; };
 		9677FC411A8CFB04005565EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9677FC401A8CFB04005565EA /* AppDelegate.swift */; };
 		9677FC451A8CFB04005565EA /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9677FC441A8CFB04005565EA /* GameScene.swift */; };
 		9677FC471A8CFB04005565EA /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9677FC461A8CFB04005565EA /* GameViewController.swift */; };
@@ -42,6 +50,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7B7D6B0A1AA9C3D000937608 /* TShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TShape.swift; sourceTree = "<group>"; };
+		7B7D6B0C1AA9C41400937608 /* LineShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineShape.swift; sourceTree = "<group>"; };
+		7B7D6B0E1AA9C44C00937608 /* LShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LShape.swift; sourceTree = "<group>"; };
+		7B7D6B101AA9C47F00937608 /* JShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JShape.swift; sourceTree = "<group>"; };
+		7B7D6B121AA9C4C000937608 /* SShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SShape.swift; sourceTree = "<group>"; };
+		7B7D6B141AA9C4E100937608 /* ZShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZShape.swift; sourceTree = "<group>"; };
+		7B7D6B161AA9C58700937608 /* Swiftris.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swiftris.swift; sourceTree = "<group>"; };
+		7BFDAF081A8E2BB100E39525 /* SquareShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareShape.swift; sourceTree = "<group>"; };
 		9677FC3B1A8CFB04005565EA /* TetrisGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TetrisGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9677FC3F1A8CFB04005565EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9677FC401A8CFB04005565EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +137,14 @@
 				9677FC7D1A8D0026005565EA /* Array2D.swift */,
 				9677FC7F1A8D05A2005565EA /* Block.swift */,
 				9677FC811A8D09C4005565EA /* Shape.swift */,
+				7BFDAF081A8E2BB100E39525 /* SquareShape.swift */,
+				7B7D6B0A1AA9C3D000937608 /* TShape.swift */,
+				7B7D6B0C1AA9C41400937608 /* LineShape.swift */,
+				7B7D6B0E1AA9C44C00937608 /* LShape.swift */,
+				7B7D6B101AA9C47F00937608 /* JShape.swift */,
+				7B7D6B121AA9C4C000937608 /* SShape.swift */,
+				7B7D6B141AA9C4E100937608 /* ZShape.swift */,
+				7B7D6B161AA9C58700937608 /* Swiftris.swift */,
 			);
 			path = TetrisGame;
 			sourceTree = "<group>";
@@ -280,11 +304,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B7D6B0F1AA9C44C00937608 /* LShape.swift in Sources */,
+				7BFDAF091A8E2BB100E39525 /* SquareShape.swift in Sources */,
 				9677FC451A8CFB04005565EA /* GameScene.swift in Sources */,
+				7B7D6B111AA9C47F00937608 /* JShape.swift in Sources */,
+				7B7D6B171AA9C58700937608 /* Swiftris.swift in Sources */,
 				9677FC821A8D09C4005565EA /* Shape.swift in Sources */,
 				9677FC7E1A8D0026005565EA /* Array2D.swift in Sources */,
+				7B7D6B0D1AA9C41400937608 /* LineShape.swift in Sources */,
+				7B7D6B131AA9C4C000937608 /* SShape.swift in Sources */,
+				7B7D6B0B1AA9C3D000937608 /* TShape.swift in Sources */,
 				9677FC801A8D05A2005565EA /* Block.swift in Sources */,
 				9677FC471A8CFB04005565EA /* GameViewController.swift in Sources */,
+				7B7D6B151AA9C4E100937608 /* ZShape.swift in Sources */,
 				9677FC411A8CFB04005565EA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -477,6 +509,7 @@
 				9677FC601A8CFB04005565EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9677FC611A8CFB04005565EA /* Build configuration list for PBXNativeTarget "TetrisGameTests" */ = {
 			isa = XCConfigurationList;
@@ -485,6 +518,7 @@
 				9677FC631A8CFB04005565EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
